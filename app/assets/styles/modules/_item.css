@@ -1,0 +1,38 @@
+.item {
+  padding: 10px;
+  display: inline-block;
+
+
+  @mixin atSmall {
+    padding: 20px 10px;
+  }
+
+  &__image {
+    max-width: 190px;
+
+    @mixin atSmall {
+      max-width: 220px;
+    }
+  }
+
+  &__description {
+    h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 8px;
+
+      @mixin atSmall {
+        font-size: 1.2rem;
+        margin-bottom: .7rem;
+      }
+    }
+  }
+
+  &__price-tag {
+    font-size: .95rem;
+
+    @mixin atSmall {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+body {
+  font-family: 'Roboto', 'sans-serif';
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+  transition: all .2s ease-out;
+}
+
+a:hover,
+a:active {
+  color: gray;
+}

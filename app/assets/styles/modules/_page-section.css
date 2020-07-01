@@ -1,0 +1,15 @@
+.page-section {
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding-top: 50px;
+
+  @mixin atSmall {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &--black {
+    background-color: black;
+    color: $mainGray;
+  }
+}

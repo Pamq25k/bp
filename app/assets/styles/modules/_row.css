@@ -1,0 +1,46 @@
+.row {
+  @mixin clearfix;
+
+  &--sm-half {
+    @mixin atSmall {
+      display: block;
+      width: 50%;
+      float: left;
+      text-align: center;
+
+    }
+
+
+  }
+
+  &--lg-one-third {
+    @mixin atLarge {
+      display: block;
+      width: 30%;
+      float: left;
+      text-align: center;
+
+      &:not(:nth-child(3n)) {
+        margin-right: 4%;
+      }
+    }
+
+
+  }
+
+  &--xs-one-fourth {
+    @mixin atExtraLarge {
+
+      display: block;
+      width: 25%;
+      float: left;
+      text-align: center;
+
+      &:not(:nth-child(3n)) {
+        margin-right: 0;
+      }
+
+    }
+  }
+
+}

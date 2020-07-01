@@ -1,0 +1,15 @@
+.wrapper {
+  overflow: hidden;
+  padding-right: 12px;
+  padding-left: 12px;
+  max-width: 1224px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  @mixin atMedium {
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 1236px;
+  }
+}

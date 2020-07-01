@@ -348,3 +348,443 @@ template {
 [hidden] {
   display: none;
 }
+
+body {
+  font-family: 'Roboto', 'sans-serif';
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+  transition: all .2s ease-out;
+}
+
+a:hover,
+a:active {
+  color: gray;
+}
+
+.site-header{
+  position: relative;
+  padding: 3px;
+  margin-bottom: -1px;
+  z-index: 3;
+  width: 100%;
+  color: white;
+  background-color: black;
+  transition: all .3s ease-out;
+
+}
+
+.site-header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+.site-header--is-sticky {
+    background-color: rgba(0, 0, 0, .35);
+
+  }
+
+@media (min-width: 768px) {
+
+.site-header{
+    margin-bottom: 0;
+    position: fixed
+
+}}
+
+.site-header__logo {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+  
+  }
+
+@media (min-width: 768px) {
+
+.site-header__logo {
+      left: 0;
+      transform: translateX(0);
+      text-align: left;
+      float: left
+  
+  }}
+
+.site-header__logo-text {
+    margin: 0;
+  }
+
+.site-header__menu-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 4;
+  }
+
+@media (min-width: 768px) {
+
+.site-header__menu-icon {
+      display: none
+  }}
+
+.site-header__menu-section {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .35);
+    z-index: -10;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(1.2);
+    opacity: 0;
+
+  }
+
+@media (min-width: 768px) {
+
+.site-header__menu-section {
+      position: relative;
+      transform: translateX(0) scale(1);
+      background-color: transparent;
+      top: 5px;
+      left: auto;
+      right: 0;
+      z-index: 3;
+      opacity: 1
+
+  }}
+
+.site-header__menu-section--is-visible {
+      transform: translateX(-50%) scale(1);
+      z-index: 3;
+      opacity: 1;
+      transition: all .2s ease-out;
+    }
+
+@media (min-width: 768px) {
+
+.site-header__menu-section--is-visible {
+        transform: translateX(0) scale(1)
+    }}
+
+.large-hero {
+  position: relative;
+  background: black;
+
+
+}
+
+@media (min-width: 768px) {
+
+.large-hero {
+    padding-top: 55px
+
+
+}}
+
+.large-hero__text-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+.large-hero__title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+  }
+
+@media (min-width: 576px) {
+
+.large-hero__title {
+      font-size: 2.3rem
+  }}
+
+@media (min-width: 768px) {
+
+.large-hero__title {
+      font-size: 3rem
+  }}
+
+.large-hero__subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+  }
+
+@media (min-width: 576px) {
+
+.large-hero__subtitle {
+      font-size: 1.4rem
+  }}
+
+@media (min-width: 768px) {
+
+.large-hero__subtitle {
+      font-size: 1.75rem
+  }}
+
+.large-hero__image {
+    background: black;
+  }
+
+.large-hero__image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.4;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+  }
+
+.page-section {
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding-top: 50px;
+}
+
+@media (min-width: 576px) {
+
+.page-section {
+    margin-top: 0px;
+    margin-bottom: 0px
+}}
+
+.page-section--black {
+    background-color: black;
+    color: #edeae6;
+  }
+
+.wrapper {
+  overflow: hidden;
+  padding-right: 12px;
+  padding-left: 12px;
+  max-width: 1224px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+.wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 1236px
+}}
+
+.item {
+  padding: 10px;
+  display: inline-block;
+}
+
+@media (min-width: 576px) {
+
+.item {
+    padding: 20px 10px
+}}
+
+.item__image {
+    max-width: 190px;
+  }
+
+@media (min-width: 576px) {
+
+.item__image {
+      max-width: 220px
+  }}
+
+.item__description h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+@media (min-width: 576px) {
+
+.item__description h3 {
+        font-size: 1.2rem;
+        margin-bottom: .7rem
+    }}
+
+.item__price-tag {
+    font-size: .95rem;
+  }
+
+@media (min-width: 576px) {
+
+.item__price-tag {
+      font-size: 1rem
+  }}
+
+.main-nav::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+.main-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+  }
+
+@media (min-width: 768px) {
+
+.main-nav ul {
+      width: auto;
+      float: right
+  }}
+
+.main-nav li {
+    display: inline-block;
+    padding: 13px 0;
+  }
+
+@media (min-width: 576px) {
+
+.main-nav li {
+      width:19%
+  }}
+
+@media (min-width: 768px) {
+
+.main-nav li {
+      width: auto;
+      float: left
+  }}
+
+.main-nav a {
+    padding: 14px;
+  }
+
+.site-footer {
+  padding-top: 20px;
+  background: black;
+  color: white;
+
+}
+
+@media (min-width: 576px) {
+
+.site-footer {
+    padding-top: 30px
+
+}}
+
+@media (min-width: 768px) {
+
+.site-footer {
+    padding-top: 35px
+
+}}
+
+.site-footer__sub {
+    color: white;
+    margin: 0;
+    text-align: center;
+  }
+
+.site-footer__menu {
+    text-align: center;
+    
+  }
+
+.site-footer__menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 10px 0;
+  }
+
+@media (min-width: 576px) {
+
+.site-footer__menu ul {
+      display: inline-block;
+      padding: 20px
+  }}
+
+.site-footer__menu li {
+    padding: 7px 15px 7px 15px;
+    text-align: center;
+  }
+
+@media (min-width: 576px) {
+
+.site-footer__menu li {
+      float:left;
+      padding: 10px 15px 15px 15px
+  }
+      .site-footer__menu li::after {
+    content: '';
+    display: table;
+    clear: both;
+  }}
+
+.site-footer__icon {
+    padding: 0 10px;
+  }
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+@media (min-width: 576px) {
+
+.row--sm-half {
+      display: block;
+      width: 50%;
+      float: left;
+      text-align: center
+
+
+  }}
+
+@media (min-width: 992px) {
+
+.row--lg-one-third {
+      display: block;
+      width: 30%;
+      float: left;
+      text-align: center
+
+
+  }
+
+      .row--lg-one-third:not(:nth-child(3n)) {
+        margin-right: 4%;
+      }}
+
+@media (min-width: 1200px) {
+
+.row--xs-one-fourth {
+
+      display: block;
+      width: 25%;
+      float: left;
+      text-align: center
+  }
+
+      .row--xs-one-fourth:not(:nth-child(3n)) {
+        margin-right: 0;
+      }}
