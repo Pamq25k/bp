@@ -771,7 +771,34 @@ a:active {
   flex-wrap: wrap;
 }
 
-.row > .col {
-    flex: 1;
-    flex-basis: 20%;
+.row > .md-col-1-of-2 {
+    width: 100%;
+  }
+
+@media (min-width: 768px) {
+
+.row > .md-col-1-of-2 {
+      width: 50%
+  }}
+
+.product {
+  padding: 4.55% 0;
+}
+
+.product__image {
+    width: 100%;
+  }
+
+.product__description {
+    position: relative;
+    padding: 5%;
+    text-align: left;
+    align-self: stretch;
+  }
+
+.product__title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
