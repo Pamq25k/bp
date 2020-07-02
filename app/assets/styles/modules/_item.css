@@ -1,17 +1,34 @@
 .item {
   padding: 10px;
-  display: inline-block;
-
+  max-width: 100%;
+  margin: 0 auto;
 
   @mixin atSmall {
+    display: inline-block;
+    width: 50%;
     padding: 20px 10px;
+    margin: 0;
+  }
+
+  @mixin atMedium {
+    width: 33%;
+  }
+
+  @mixin atLarge {
+    width: 25%;
+  }
+  @mixin atExtraLarge {
+    width: 20%;
   }
 
   &__image {
     max-width: 190px;
 
     @mixin atSmall {
-      max-width: 220px;
+      max-width: 200px;
+    }
+    @mixin atLarge {
+      max-width: 170px;
     }
   }
 
@@ -22,14 +39,13 @@
       margin-bottom: 8px;
 
       @mixin atSmall {
-        font-size: 1.2rem;
-        margin-bottom: .7rem;
+        margin-bottom: 0.7rem;
       }
     }
   }
 
   &__price-tag {
-    font-size: .95rem;
+    font-size: 0.95rem;
 
     @mixin atSmall {
       font-size: 1rem;

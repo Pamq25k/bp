@@ -1,11 +1,12 @@
 .page-section {
   margin-top: -1px;
   margin-bottom: -1px;
-  padding-top: 50px;
+  padding-top: 30px;
 
   @mixin atSmall {
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 50px;
   }
 
   &--black {

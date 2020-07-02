@@ -1,7 +1,6 @@
 .main-nav {
   @mixin clearfix;
 
-
   ul {
     padding: 0;
     margin: 0;
@@ -18,10 +17,9 @@
     display: inline-block;
     padding: 13px 0;
 
-    @mixin atSmall{
-      width:19%;
+    @mixin atSmall {
+      width: 19%;
     }
-    
     @mixin atMedium {
       width: auto;
       float: left;
