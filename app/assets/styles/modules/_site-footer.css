@@ -2,6 +2,7 @@
   padding-top: 20px;
   background: black;
   color: white;
+  margin: 0;
 
   @mixin atSmall {
     padding-top: 30px;
@@ -11,7 +12,6 @@
     padding-top: 35px;
   }
 
-
   &__sub {
     color: white;
     margin: 0;
@@ -20,7 +20,6 @@
 
   &__menu {
     text-align: center;
-    
   }
 
   &__menu ul {
@@ -28,19 +27,18 @@
     list-style: none;
     padding: 10px 0;
 
-
     @mixin atSmall {
       display: inline-block;
       padding: 20px;
     }
   }
-  
+
   &__menu li {
     padding: 7px 15px 7px 15px;
     text-align: center;
 
     @mixin atSmall {
-      float:left;
+      float: left;
       padding: 10px 15px 15px 15px;
       @mixin clearfix;
     }
@@ -49,5 +47,4 @@
   &__icon {
     padding: 0 10px;
   }
-
 }

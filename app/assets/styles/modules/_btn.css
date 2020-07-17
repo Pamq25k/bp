@@ -1,0 +1,40 @@
+.btn {
+  text-decoration: none;
+  background-color: whitesmoke;
+  border: none;
+  transition: 0.15s ease-out;
+  width: 100%;
+  padding: 3.5% 7%;
+
+  margin-bottom: 5%;
+
+  @mixin atMedium {
+    width: auto;
+    padding: 2.5% 7%;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--gray {
+    background-color: #333;
+    color: #eee;
+  }
+
+  &--gray:hover {
+    background-color: #252525;
+  }
+
+  &--gray-outline {
+    background-color: transparent;
+    border: #333 1px solid;
+    color: #eee;
+  }
+
+  &--gray-outline:hover {
+    color: #ccc;
+    border: #373737 1px solid;
+  }
+}

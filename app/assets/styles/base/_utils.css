@@ -1,0 +1,11 @@
+.mr {
+  margin-right: 10%;
+
+  &-small {
+    margin-right: 5%;
+  }
+}
+
+.mb {
+  margin-bottom: 5%;
+}

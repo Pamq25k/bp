@@ -350,7 +350,7 @@ template {
 }
 
 body {
-  font-family: 'Roboto', 'sans-serif';
+  font-family: "Roboto", "sans-serif";
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -368,7 +368,7 @@ a,
 a:visited {
   text-decoration: none;
   color: white;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 a:hover,
@@ -420,8 +420,13 @@ a:active {
       left: 0;
       transform: translateX(0);
       text-align: left;
-      float: left
+      float: left;
+      z-index: 10
   }}
+
+.site-header__logo a:hover {
+      color: white;
+    }
 
 .site-header__logo-text {
     margin: 0;
@@ -479,16 +484,12 @@ a:active {
 .large-hero {
   position: relative;
   background: black;
-
-
 }
 
 @media (min-width: 768px) {
 
 .large-hero {
     padding-top: 55px
-
-
 }}
 
 .large-hero__text-content {
@@ -704,21 +705,19 @@ a:active {
   padding-top: 20px;
   background: black;
   color: white;
-
+  margin: 0;
 }
 
 @media (min-width: 576px) {
 
 .site-footer {
     padding-top: 30px
-
 }}
 
 @media (min-width: 768px) {
 
 .site-footer {
     padding-top: 35px
-
 }}
 
 .site-footer__sub {
@@ -729,7 +728,6 @@ a:active {
 
 .site-footer__menu {
     text-align: center;
-    
   }
 
 .site-footer__menu ul {
@@ -753,7 +751,7 @@ a:active {
 @media (min-width: 576px) {
 
 .site-footer__menu li {
-      float:left;
+      float: left;
       padding: 10px 15px 15px 15px
   }
       .site-footer__menu li::after {
@@ -782,23 +780,133 @@ a:active {
   }}
 
 .product {
-  padding: 4.55% 0;
+  padding: 0 7%;
 }
+
+@media (min-width: 768px) {
+
+.product {
+    padding: 4.55% 0
+}}
 
 .product__image {
     width: 100%;
   }
 
-.product__description {
+.product__details {
+    margin-top: 6%;
     position: relative;
-    padding: 5%;
-    text-align: left;
     align-self: stretch;
+    text-align: left;
   }
 
+@media (min-width: 768px) {
+
+.product__details {
+      margin: 0;
+      padding: 2% 5%
+  }}
+
 .product__title {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 1.7rem;
+    margin: 0;
+    text-align: center;
   }
+
+@media (min-width: 768px) {
+
+.product__title {
+      font-size: 2.1rem
+  }}
+
+.product__price-tag {
+    margin: 9% 0 0;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+@media (min-width: 768px) {
+
+.product__price-tag {
+      font-size: 1.3rem
+  }}
+
+.product__description {
+    margin-top: 14%;
+  }
+
+@media (min-width: 768px) {
+
+.product__description {
+      font-size: 1.2rem
+  }}
+
+.product__buttons {
+    width: 100%;
+    text-align: center;
+    margin: 8% 0 0;
+  }
+
+@media (min-width: 768px) {
+
+.product__buttons {
+      position: absolute;
+      bottom: 3%;
+      left: 0;
+      margin: 0
+  }}
+
+.btn {
+  text-decoration: none;
+  background-color: whitesmoke;
+  border: none;
+  transition: 0.15s ease-out;
+  width: 100%;
+  padding: 3.5% 7%;
+
+  margin-bottom: 5%;
+}
+
+@media (min-width: 768px) {
+
+.btn {
+    width: auto;
+    padding: 2.5% 7%;
+    margin-bottom: 0
+}}
+
+.btn:hover {
+    cursor: pointer;
+  }
+
+.btn--gray {
+    background-color: #333;
+    color: #eee;
+  }
+
+.btn--gray:hover {
+    background-color: #252525;
+  }
+
+.btn--gray-outline {
+    background-color: transparent;
+    border: #333 1px solid;
+    color: #eee;
+  }
+
+.btn--gray-outline:hover {
+    color: #ccc;
+    border: #373737 1px solid;
+  }
+
+.mr {
+  margin-right: 10%;
+}
+
+.mr-small {
+    margin-right: 5%;
+  }
+
+.mb {
+  margin-bottom: 5%;
+}
